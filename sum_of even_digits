@@ -1,0 +1,21 @@
+#Find and return the sum of all even digits present in n
+"""For example, for 58324:
+
+Even digits: 8, 2, 4
+Sum = 8 + 2 + 4 = 14"""
+def sum_even_digits(n):
+    total = 0
+
+    while n > 0:
+        digit = n % 10
+
+        if digit % 2 == 0:
+            total += digit
+
+        n = n // 10
+
+    return total
+
+
+n = int(input())
+print(sum_even_digits(n))
