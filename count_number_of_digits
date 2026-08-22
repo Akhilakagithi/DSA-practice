@@ -1,0 +1,15 @@
+#count the number of digits in given number without using buid in functions and wothout converting it into string
+  n = int(input())
+
+if n == 0:
+    count = 1
+else:
+    count = 0
+
+    while n > 0:
+        n = n // 10
+        count += 1
+
+print(count)
+
+  #Complexity: O(log₁₀ n) time and O(1) space.
