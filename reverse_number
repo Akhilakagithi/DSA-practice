@@ -1,0 +1,20 @@
+#Reverse the digits of the number and return the reversed number.
+#ex= input:12345
+#    output:54321
+def reverse_number(n):
+    r_n = 0
+
+    while n > 0:
+        l_d = n % 10
+        r_n = r_n * 10 + l_d
+        n = n // 10
+
+    return r_n
+
+
+n = int(input())
+print(reverse_number(n))
+
+
+#Time: O(log₁₀ n) — we process each digit once.
+#Space: O(1) — only a few variables are used.
