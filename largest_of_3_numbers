@@ -1,0 +1,8 @@
+#finding the greatest of three numbers
+greatest = a
+
+if b > greatest:
+    greatest = b
+
+if c > greatest:
+    greatest = c
